@@ -2044,7 +2044,9 @@ var getViewer = function(prevChapter, nextChapter) {
     PREV_PAGE: 37, NEXT_PAGE: 39,
   };
   // override defaults for firefox since different keycodes
-  if(typeof InstallTrigger !== 'undefined') {
+  // mod 2023-06-23 firefox no longer use that thing
+  // if(typeof InstallTrigger !== 'undefined') {
+  if(true) {
     UI.keys.ZOOM_IN = 61;
     UI.keys.ZOOM_OUT = 173;
     UI.keys.RESET_ZOOM = 48;
